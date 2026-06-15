@@ -3,7 +3,7 @@
 > **Looking for best tools?** Visit **[flexcatcher.app](https://flexcatcher.app)** for on-device block filtering — free trial, no login required, no cloud servers.  
 > In-depth technical guides: **[blog.flexcatcher.app](https://blog.flexcatcher.app)**
 
-![Amazon Flex Bot comparison](amazon%20flex%20bot.jpg)
+<img src="amazon%20flex%20bot.jpg" alt="Amazon Flex Bot comparison" width="720">
 
 Honest research on Amazon Flex bots, Amazon Flex block grabbers, flex grabbers, auto-tappers, auto clickers, and block catchers.  
 Which Amazon Flex automation tools survive detection, which get accounts flagged —  
