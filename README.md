@@ -40,7 +40,7 @@ Cloud-based Amazon Flex bots trigger multiple signals at once. On-device tools a
 
 Amazon doesn't disclose their exact detection methods, but from our testing and driver community reports, the escalation path is predictable for any Amazon Flex bot, block grabber, or auto tapper:
 
-| Stage | What Happens | Timeline |
+| Stage | What Happens
 |:---|:---|:---|
 | 1. Soft Warning | "We noticed unusual activity" in-app notification 
 | 2. Offer Quality Drop | Fewer high-value offers, more base-rate blocks 
