@@ -10,8 +10,6 @@ Honest research on Amazon Flex bots, Amazon Flex block grabbers, flex grabbers, 
 Which Amazon Flex automation tools survive detection, which get accounts flagged —  
 based on 6 weeks of testing across 12 accounts in active US markets.
 
----
-
 ## Quick Summary: Amazon Flex Bot & Block Grabber Comparison
 
 Every Amazon Flex bot, block grabber, or flex grabber promises the same thing: auto-accept blocks faster than a human can tap. We tested 12 Amazon Flex accounts across 4 approaches over 6 weeks (Chicago, Dallas, Phoenix). Here's what the data shows:
