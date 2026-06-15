@@ -2,20 +2,21 @@
 
 <img src="amazon%20flex%20bot.jpg" alt="Amazon Flex Bot comparison" width="280" align="left" style="margin-right: 24px; margin-bottom: 12px;">
 
-> **Looking for tools?** Visit **[flexcatcher.app](https://flexcatcher.app)** for on-device block filtering — free trial, no login required, no cloud servers.  
+> **Looking for tools?** Visit **[flexcatcher.app](https://flexcatcher.app)** for on-device block filtering — free trial, no login required, no cloud servers.
+  
 > In-depth technical guides: **[blog.flexcatcher.app](https://blog.flexcatcher.app)**
 
 Honest research on Amazon Flex bots, Amazon Flex block grabbers, flex grabbers, auto-tappers, auto clickers, and block catchers.  
 Which Amazon Flex automation tools survive detection, which get accounts flagged —  
 based on 6 weeks of testing across 12 accounts in active US markets.
 
-<br clear="both">
-
 ---
 
 ## Quick Summary: Amazon Flex Bot & Block Grabber Comparison
 
 Every Amazon Flex bot, block grabber, or flex grabber promises the same thing: auto-accept blocks faster than a human can tap. We tested 12 Amazon Flex accounts across 4 approaches over 6 weeks (Chicago, Dallas, Phoenix). Here's what the data shows:
+
+<br clear="both">
 
 | Approach | Speed | Account Risk | Price | Survival (30d) |
 |:---|:---|:---|:---|:---|
