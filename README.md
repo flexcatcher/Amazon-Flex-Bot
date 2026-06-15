@@ -1,6 +1,6 @@
 # Amazon Flex Bot (Flexbot) — Block Grabber & Auto Tapper Research (2026)
 
-<img src="amazon%20flex%20bot.jpg" alt="Amazon Flex Bot comparison" width="360" align="left" style="margin-right: 24px; margin-bottom: 12px;">
+<img src="amazon%20flex%20bot.jpg" alt="Amazon Flex Bot comparison" width="280" align="left" style="margin-right: 24px; margin-bottom: 12px;">
 
 > **Looking for tools?** Visit **[flexcatcher.app](https://flexcatcher.app)** for on-device block filtering — free trial, no login required, no cloud servers.  
 > In-depth technical guides: **[blog.flexcatcher.app](https://blog.flexcatcher.app)**
