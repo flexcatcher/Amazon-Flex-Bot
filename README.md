@@ -1,111 +1,145 @@
-# Amazon Flex Bot (Flexbot) — Block Grabber & Auto Tapper Research (2026)
+# Amazon Flex bot (2026): block grabbers, auto clickers and on-phone apps compared
 
-<img src="amazon%20flex%20bot.jpg" alt="Amazon Flex Bot comparison" width="280" align="left" style="margin-right: 24px; margin-bottom: 12px;">
+Written by the team behind [FlexCatcher](https://flexcatcher.app?utm_source=github), an Android app that catches Amazon Flex blocks on your own phone. We build one of these tools, so read this as a maker's guide: what each kind of Amazon Flex bot does, what it puts at risk, and how to check one before you install it. The checks work on any block grabber, ours included.
 
-> **Looking for tools?** Visit **[flexcatcher.app](https://flexcatcher.app)** for on-device block filtering — free trial, no login required, no cloud servers.
-  
-> In-depth technical guides: **[blog.flexcatcher.app](https://blog.flexcatcher.app)**
+Updated October 2026.
 
-Honest research on Amazon Flex bots, Amazon Flex block grabbers, flex grabbers, auto-tappers, auto clickers, and block catchers.  
-Which Amazon Flex automation tools survive detection, which get accounts flagged —  
-based on 6 weeks of testing across 12 accounts in active US markets.
+[![FlexCatcher, an Amazon Flex bot for Android that accepts the blocks matching your filters](images/amazon-flex-bot-flexcatcher.png)](https://flexcatcher.app?utm_source=github)
 
-<br clear="both">
+## Contents
 
+- [What is an Amazon Flex bot?](#what-is-an-amazon-flex-bot)
+- [Three kinds of Amazon Flex bots and block grabbers](#three-kinds-of-amazon-flex-bots-and-block-grabbers)
+- [Do Amazon Flex bots work?](#do-amazon-flex-bots-work)
+- [Are Amazon Flex bots allowed, and can Amazon detect them?](#are-amazon-flex-bots-allowed-and-can-amazon-detect-them)
+- [How to pick the best Amazon Flex bot: 6 checks](#how-to-pick-the-best-amazon-flex-bot-6-checks)
+- [Amazon Flex bot for iPhone or Android](#amazon-flex-bot-for-iphone-or-android)
+- [FlexCatcher: an Amazon Flex bot that stays on your phone](#flexcatcher-an-amazon-flex-bot-that-stays-on-your-phone)
+- [Amazon Flex bot FAQ](#amazon-flex-bot-faq)
+- [More Amazon Flex guides](#more-amazon-flex-guides)
 
----
+## What is an Amazon Flex bot?
 
-## Quick Summary: Amazon Flex Bot & Block Grabber Comparison
+An Amazon Flex bot refreshes the Offers screen for you and accepts a block before another driver gets it. Drivers call the same thing a Flex bot, flexbot, block grabber, flex grabber, block catcher, auto clicker or auto tapper, and some just search for an app to get Amazon Flex blocks.
 
-Every Amazon Flex bot, block grabber, or flex grabber promises the same thing: auto-accept blocks faster than a human can tap. We tested 12 Amazon Flex accounts across 4 approaches over 6 weeks (Chicago, Dallas, Phoenix). Here's what the data shows:
+These tools exist because good blocks disappear in seconds. Without one, you keep the Flex app open and refresh by hand, and while you wait for a block you can't do much else.
 
+## Three kinds of Amazon Flex bots and block grabbers
 
+| | Cloud bot or script | Auto clicker, auto tapper | On-phone app |
+|:---|:---|:---|:---|
+| Where it runs | A server you don't control | Your phone | Your phone |
+| Asks for your Flex email and password | Yes | No | No |
+| Picks blocks by your filters | Depends on the tool | No | Yes |
 
-| Approach | Speed | Account Risk | Price | Survival (30d) |
-|:---|:---|:---|:---|:---|
-| **Cloud Bots** (server-based block grabbers) | 200-400ms | Very High | $20-50/wk | 0/3 clean |
-| **Residential Proxy Bots** (block snatchers using proxy IPs) | 300-500ms | High | $30-60/wk | 0/3 clean (delayed) |
-| **Simple Auto-Tappers / Auto Clickers** (fixed intervals) | 500-800ms | Medium-High | $0-10/wk | 1/3 clean |
-| **On-Device Assistants** (screen reader + human-like behavior) | 400-700ms | Low | $10-15/wk | 3/3 clean |
-| **Manual Refresh** (no Amazon Flex helper or tool) | 1-3 sec | None | Free | 3/3 clean |
+A cloud bot signs in to your Flex account from its own server, so it needs your email and password. The account you get paid through is then logged in somewhere that isn't your phone. The old Amazon Flex scripts you find on GitHub work the same way: they talk to Flex with your login from whatever computer runs them, and the popular ones haven't been updated in years.
 
-> **Key finding**: on-device tools that run locally on your phone had **zero account flags** across all test devices. Cloud-based Amazon Flex bots and block grabbers had 75% warning rate within 30 days. If you're looking for an Amazon Flex bot APK or Amazon Flex bot download — understand the risks first.
+An auto clicker taps a fixed spot on the screen on a timer. It never reads the offer, so it grabs a block you would skip as readily as one you want, and it reacts in exactly the same rhythm every time.
 
----
+An on-phone app reads the Offers screen through Android Accessibility, compares each offer with your filters and taps Accept only when one matches, the way you would. FlexCatcher works this way.
 
-## Why Amazon Flex Bots & Cloud Block Grabbers Get Detected
+More detail: [How Amazon Flex bots work](https://blog.flexcatcher.app/how-amazon-flex-bots-work/) and [Amazon Flex auto tappers: how they work and what to watch for](https://blog.flexcatcher.app/auto-tapper-guide/).
 
-Amazon's fraud detection analyzes multiple signals simultaneously. The most common Amazon Flex block grabber and Amazon Flex bot approach — cloud-based servers — triggers several signals at once:
+## Do Amazon Flex bots work?
 
-1. **Server IP mismatch** — your account logged in from a data center while your phone is in a different city
-2. **Consistent tap timing** — every action exactly 500ms apart (auto clicker scripts), real humans vary 300ms–2s
-3. **No scroll behavior** — humans scroll through offers, flex grabbers jump straight to "Accept"
-4. **No context switching** — real drivers switch apps, block bots stay locked to Flex
-5. **VPN/Proxy IPs** — Amazon maintains lists of known VPN exit nodes
+A bot reacts faster than a thumb and keeps refreshing while you do something else. It can't make blocks appear, though: it only sees the offers Flex shows you. No tool can promise you a block, and a tool that does is selling the promise.
 
-Cloud-based Amazon Flex bots trigger multiple signals at once. On-device tools avoid most of them by design.
+## Are Amazon Flex bots allowed, and can Amazon detect them?
 
----
+Amazon doesn't allow them, and it looks for them. In [its own post about bots](https://flex.amazon.com/blog/how-amazon-flex-is-helping-delivery-partners-schedule-work-by-removing-bots), Amazon Flex says it uses machine learning to find accounts that use bots, warns the driver and removes the account if it continues. It also shows a CAPTCHA on the Offers screen when activity looks automated, and it blocks requests it believes come from bots. The Flex agreement restricts automated tools, and accounts do get deactivated.
 
-## How Amazon Flex Detects Block Bots & Auto Tappers
+So any third-party tool carries some risk, FlexCatcher included. Read the Flex terms before you install one. Drivers who refresh by hand hit the same CAPTCHA, which we cover in [Amazon Flex CAPTCHA jail](https://blog.flexcatcher.app/captcha-jail/). Which setups get noticed first is in [Why Amazon Flex bots get accounts flagged](https://blog.flexcatcher.app/cloud-bots-dangers/).
 
-Amazon doesn't disclose their exact detection methods, but from our testing and driver community reports, the escalation path is predictable for any Amazon Flex bot, block grabber, or auto tapper:
+## How to pick the best Amazon Flex bot: 6 checks
 
-| Stage | What Happens |
-|:---|:---|
-| 1. Soft Warning | "We noticed unusual activity" in-app notification |
-| 2. Offer Quality Drop | Fewer high-value offers, more base-rate blocks |
-| 3. Temporary Hold | Account locked, requires contacting support |
-| 4. Deactivation | Permanent. Rarely reversed. |
+1. It never asks for your Amazon Flex email or password. A tool that does signs in to your account from somewhere else.
+2. It runs on your phone, not on a server.
+3. It has real filters: minimum pay per block, minimum hourly rate, maximum block length, working hours and stations. Without filters it accepts whatever shows up.
+4. It stops when the Flex app shows a verification check and hands the screen back to you.
+5. You know where the install file comes from: a signed APK with a published checksum.
+6. You can try it before you pay, and the sales page makes no promises about how many blocks you'll get or that your account is protected.
 
----
+The same checks with examples: [Amazon Flex bot: what to check before you install one](https://blog.flexcatcher.app/amazon-flex-bot/). To look up a tool by name, see the [Amazon Flex bot list](https://blog.flexcatcher.app/amazon-flex-bot-list/).
 
-## CAPTCHA Jail — Even Manual Drivers Get Hit (No Bot Required)
+## Amazon Flex bot for iPhone or Android
 
-Manual refreshing at high frequency triggers Amazon's CAPTCHA system — no Amazon Flex bot or auto clicker needed. A real Reddit post from a driver:
+A bot that reads the Offers screen on the phone needs Android. Android lets an app with Accessibility permission read another app's screen and tap it for you, and iPhone doesn't give third-party apps that kind of access. What is sold as an Amazon Flex bot for iPhone is a cloud service that takes your Flex login, a blind auto clicker, or a second phone. If it asks for your Flex email and password, that brings back check 1.
 
-> *"I'm a regular user (no bot) only refresh..refresh..refresh and start getting CAPTCHA every time I tried to schedule a block. The result is ZERO BLOCKS because when you waste time solving the CAPTCHA the block is gone away by a BOT USER."*
+FlexCatcher is an Android app: Android 8.0 or newer, 3 GB of memory or more, no root. For a driver with an iPhone, the workable setup is a second, cheap Android phone.
 
-**Lesson**: excessive manual refreshing looks the same as an Amazon Flex auto tapper to Amazon's systems. Tools with human-like randomized timing avoid CAPTCHA triggers entirely. This is the hidden cost of not using an Amazon Flex helper — you get punished for refreshing like a bot, even when you're not one.
+More on this: [Amazon Flex bot for iPhone: what exists, what doesn't, and why](https://blog.flexcatcher.app/amazon-flex-bot-iphone/).
 
----
+## FlexCatcher: an Amazon Flex bot that stays on your phone
 
-## The Safer Approach: On-Device Block Catcher Tools
+<p align="center">
+  <img src="images/amazon-flex-bot-home-screen.webp" alt="FlexCatcher home screen while it watches the Amazon Flex Offers screen" width="30%">
+  <img src="images/amazon-flex-block-filters.webp" alt="Amazon Flex block filters in FlexCatcher: minimum hourly rate, minimum pay, max duration, work hours" width="30%">
+  <img src="images/amazon-flex-bot-catch-modes.webp" alt="FlexCatcher catch modes: Everyday, Fast, Drop and Timer" width="30%">
+</p>
+<p align="center"><sub>Screens from the app. Sample data.</sub></p>
 
-On-device block catcher tools work fundamentally differently from cloud-based Amazon Flex bots and block grabbers:
+FlexCatcher is an Amazon Flex block grabber for Android, built by a Flex driver, for Flex drivers. It watches one screen, your Offers list, and accepts a block that matches your filters, just like you tapped the button.
 
-- **No login sharing** — your Amazon credentials never leave your phone
-- **No server IPs** — traffic comes from your actual device, your actual connection
-- **Screen-reading via Android Accessibility API** — same API that screen readers and password managers use
-- **Randomized behavior** — actions at 400ms–2s intervals with natural pauses (not a simple auto clicker)
-- **Smart filters** — the block catcher only accepts blocks matching your criteria, not everything blindly
+- Filters: minimum hourly rate, minimum pay per block, maximum block length, working hours, stations.
+- Four catch modes: Everyday (long runs, longer breaks), Fast (a burst of about 15 minutes when blocks are dropping), Drop (for a drop you know is coming) and Timer (runs without breaks for 15 to 45 minutes, then stops).
+- Everyday, Fast and Drop take breaks on their own.
+- If the Flex app shows a verification check, FlexCatcher stops and waits for you.
+- A notification when a block is caught, and a history with station, pay and hourly rate.
+- An optional reminder before a block starts.
+- No login, no password, no remote access to your account. It needs one Accessibility permission, and you can turn it off at any time.
+- In English, Spanish and Russian.
 
-From Amazon's perspective, this matches normal phone interactions. In our 6-week test, accounts using this on-device pattern had zero warnings — unlike every cloud-based Amazon Flex block grabber tested.
+How it works:
 
----
+1. Turn on one permission: FlexCatcher under Accessibility.
+2. Set how much a block has to pay.
+3. Tap Start, open the Offers screen and keep it open.
+4. A matching block is accepted and you get a notification.
 
-## What to Look For in an Amazon Flex Bot or Block Grabber
+**[Try FlexCatcher free for 7 days](https://flexcatcher.app?utm_source=github)**. No card, no password.
 
-If you're considering any Amazon Flex automation tool — whether it's called a flex bot, block grabber, flex grabber, auto tapper, block catcher, or block snatcher — here are the questions to ask:
+## Amazon Flex bot FAQ
 
-1. **Does it ask for your Amazon login?** If yes — hard pass. Credentials on third-party servers is the #1 cause of account flags. No legit Amazon Flex bot download should require your password.
-2. **Does it run on a server or on your phone?** On-device = your IP, your device signature. Server = instant red flag.
-3. **Does it have randomized timing or fixed intervals?** Fixed-interval auto clickers get detected within days.
-4. **Does it filter blocks or accept everything?** Accepting every block blindly is just as suspicious as tapping too fast.
-5. **Does it use VPNs?** VPNs make detection more likely, not less.
+### Is there a free Amazon Flex bot?
 
----
+FlexCatcher has a free trial: 7 days of full access, one trial per device, no card.
 
-## See the Full Analysis
+### Where do I download the Amazon Flex bot APK?
 
-For the complete comparison with detailed detection data, pricing breakdowns, and some bonuses:  
-→ **[flexcatcher.app](https://flexcatcher.app)**
+On [flexcatcher.app](https://flexcatcher.app?utm_source=github). The APK is signed, and its checksum is published on the same page.
 
-For in-depth technical guides on Amazon Flex bots, block grabbers, and safer alternatives:  
-→ **[blog.flexcatcher.app](https://blog.flexcatcher.app)**
+### Does FlexCatcher need my Amazon Flex password?
 
----
+No. It never asks for your Flex login. It reads the Offers screen on your phone.
+
+### Is there an Amazon Flex bot script on GitHub?
+
+There are old scripts, and they sign in with your Flex email and password. This repository has no code: it's a guide. FlexCatcher is a finished Android app on [flexcatcher.app](https://flexcatcher.app?utm_source=github).
+
+### Are Amazon Flex bots legit?
+
+Some are working tools. Before you trust one, run the six checks above, and treat any page that promises a number of blocks or says your account can't be flagged as an ad.
+
+### Can Amazon Flex detect an auto clicker?
+
+Amazon says it looks for activity that seems automated and shows a CAPTCHA when it finds it. An auto clicker taps on a fixed timer and never reads the offer, so it also accepts blocks you don't want.
+
+### Can I lose my Flex account using a bot?
+
+Yes, you can. See [Are Amazon Flex bots allowed, and can Amazon detect them?](#are-amazon-flex-bots-allowed-and-can-amazon-detect-them) above.
+
+## More Amazon Flex guides
+
+- [Amazon Flex bot list: the names drivers search for](https://blog.flexcatcher.app/amazon-flex-bot-list/)
+- [Amazon Flex bot for iPhone](https://blog.flexcatcher.app/amazon-flex-bot-iphone/)
+- [Amazon Flex block grabber options: speed and safety compared](https://blog.flexcatcher.app/best-alternatives/)
+- [Amazon Flex issues and how to avoid them](https://blog.flexcatcher.app/amazon-flex-issues-how-to-avoid/)
+- [How to get more Amazon Flex blocks](https://blog.flexcatcher.app/how-to-get-more-blocks/)
+- [Amazon Flex "Start Soon": what it means for drivers](https://blog.flexcatcher.app/amazon-flex-start-soon/)
+- [The Amazon Flex Request tab explained](https://blog.flexcatcher.app/amazon-flex-request-blocks-update/)
+- [All guides on blog.flexcatcher.app](https://blog.flexcatcher.app/)
+- En español: [Bot para Amazon Flex](https://blog.flexcatcher.app/es/amazon-flex-bot/)
 
 ## Disclaimer
 
-This repository contains **research and analysis only**. No code, no Amazon Flex bot APK, no automation tools, no auto clicker scripts. All data is from publicly available driver community reports and independent testing. We are not affiliated with Amazon, Inc. All trademarks belong to their respective owners. This research is for educational purposes — always comply with Amazon Flex's terms of service.
+FlexCatcher is an independent app, not affiliated with Amazon. Amazon Flex is a trademark of Amazon.com, Inc. or its affiliates. This repository contains a guide only: no code, no APK, no scripts.
