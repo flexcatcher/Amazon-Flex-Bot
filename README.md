@@ -38,7 +38,8 @@ An auto clicker taps a fixed spot on the screen on a timer. It never reads the o
 
 An on-phone app reads the Offers screen through Android Accessibility, compares each offer with your filters and taps Accept only when one matches, the way you would. FlexCatcher works this way.
 
-<p align="center"><img src="images/amazon-flex-block-grabber-on-phone.webp" alt="Amazon Flex block grabber on a phone: one block caught, two skipped by the driver's filters" width="85%"></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=FeSxwQWoZA8"><img src="images/amazon-flex-block-grabber-on-phone.webp" alt="Video: an Amazon Flex block grabber on a phone, one block caught and two skipped by the driver's filters" width="85%"></a></p>
+<p align="center"><a href="https://www.youtube.com/watch?v=FeSxwQWoZA8">Watch the FlexCatcher demo on YouTube</a></p>
 
 More detail: [How Amazon Flex bots work](https://blog.flexcatcher.app/how-amazon-flex-bots-work/) and [Amazon Flex auto tappers: how they work and what to watch for](https://blog.flexcatcher.app/auto-tapper-guide/).
 
@@ -141,6 +142,10 @@ Yes, you can. See [Are Amazon Flex bots allowed, and can Amazon detect them?](#a
 - [The Amazon Flex Request tab explained](https://blog.flexcatcher.app/amazon-flex-request-blocks-update/)
 - [All guides on blog.flexcatcher.app](https://blog.flexcatcher.app/)
 - En español: [Bot para Amazon Flex](https://blog.flexcatcher.app/es/amazon-flex-bot/)
+
+## Follow FlexCatcher
+
+[YouTube](https://www.youtube.com/@flexcatcher) · [TikTok](https://www.tiktok.com/@flexcatcher) · [Instagram](https://www.instagram.com/flexcatcher/) · [Threads](https://www.threads.com/@flexcatcher)
 
 ## Disclaimer
 
