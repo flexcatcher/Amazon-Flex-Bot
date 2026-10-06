@@ -1,5 +1,7 @@
 # Amazon Flex bot (2026): block grabbers, auto clickers and on-phone apps compared
 
+English · [Español](README.es.md) · [Русский](README.ru.md)
+
 Written by the team behind [FlexCatcher](https://flexcatcher.app?utm_source=github), an Android app that catches Amazon Flex blocks on your own phone. We build one of these tools, so read this as a maker's guide: what each kind of Amazon Flex bot does, what it puts at risk, and how to check one before you install it. The checks work on any block grabber, ours included.
 
 Updated October 2026.
