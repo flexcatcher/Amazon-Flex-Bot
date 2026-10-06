@@ -4,7 +4,7 @@ Written by the team behind [FlexCatcher](https://flexcatcher.app?utm_source=gith
 
 Updated October 2026.
 
-[![FlexCatcher, an Amazon Flex bot for Android that accepts the blocks matching your filters](images/amazon-flex-bot-flexcatcher.png)](https://flexcatcher.app?utm_source=github)
+[![FlexCatcher, an Amazon Flex bot and block grabber for Android, on a phone with the Offers list](images/amazon-flex-bot-block-grabber-android.png)](https://flexcatcher.app?utm_source=github)
 
 ## Contents
 
@@ -37,6 +37,8 @@ A cloud bot signs in to your Flex account from its own server, so it needs your 
 An auto clicker taps a fixed spot on the screen on a timer. It never reads the offer, so it grabs a block you would skip as readily as one you want, and it reacts in exactly the same rhythm every time.
 
 An on-phone app reads the Offers screen through Android Accessibility, compares each offer with your filters and taps Accept only when one matches, the way you would. FlexCatcher works this way.
+
+<p align="center"><img src="images/amazon-flex-block-grabber-on-phone.webp" alt="Amazon Flex block grabber on a phone: one block caught, two skipped by the driver's filters" width="85%"></p>
 
 More detail: [How Amazon Flex bots work](https://blog.flexcatcher.app/how-amazon-flex-bots-work/) and [Amazon Flex auto tappers: how they work and what to watch for](https://blog.flexcatcher.app/auto-tapper-guide/).
 
