@@ -72,8 +72,8 @@ More on this: [Amazon Flex bot for iPhone: what exists, what doesn't, and why](h
 ## FlexCatcher: an Amazon Flex bot that stays on your phone
 
 <p align="center">
-  <img src="images/amazon-flex-bot-home-screen.webp" alt="FlexCatcher home screen while it watches the Amazon Flex Offers screen" width="30%">
-  <img src="images/amazon-flex-block-filters.webp" alt="Amazon Flex block filters in FlexCatcher: minimum hourly rate, minimum pay, max duration, work hours" width="30%">
+  <img src="images/amazon-flex-bot-home-screen.webp" alt="FlexCatcher home screen while it watches the Amazon Flex Offers screen" width="30%">&nbsp;&nbsp;
+  <img src="images/amazon-flex-block-filters.webp" alt="Amazon Flex block filters in FlexCatcher: minimum hourly rate, minimum pay, max duration, work hours" width="30%">&nbsp;&nbsp;
   <img src="images/amazon-flex-bot-catch-modes.webp" alt="FlexCatcher catch modes: Everyday, Fast, Drop and Timer" width="30%">
 </p>
 <p align="center"><sub>Screens from the app. Sample data.</sub></p>
